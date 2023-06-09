@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/top_bg"
-        android:background="@color/relative_bg">
+        android:background="@drawable/relativebg_type2_drawable">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,7 +20,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
 
                 <TextView
                     android:layout_width="0dp"
@@ -74,7 +75,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_marginStart="10dp"
+
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -127,7 +128,8 @@
                             android:textStyle="bold"
                             android:textColor="@color/white"
                             android:textSize="15sp"
-                            android:layout_marginStart="10dp">
+                            android:layout_marginStart="10dp"
+                            >
 
                         </TextView>
 
@@ -199,12 +201,12 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/middle_bg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:id="@+id/middle_bg"
         android:layout_below="@id/top_bg"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="5dp"
+        android:gravity="center">
 
         <GridLayout
             android:layout_width="wrap_content"
@@ -216,9 +218,9 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="160dp"
                 android:layout_height="60dp"
-                app:strokeWidth="2dp"
                 android:backgroundTint="#EAE9E9"
-                app:strokeColor="@color/card_colour">
+                app:strokeColor="@color/card_colour"
+                app:strokeWidth="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -228,27 +230,27 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center">
+                        android:orientation="horizontal">
 
                         <View
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:layout_gravity="center"
-                            android:backgroundTint="@color/blue"
-                            android:background="@drawable/viewbg_drawable">
+                            android:background="@drawable/viewbg_drawable"
+                            android:backgroundTint="@color/blue">
 
                         </View>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
                             android:text="@string/total"
                             android:textSize="15sp"
-                            android:textStyle="bold"
-                            android:layout_marginStart="10dp"
-                            android:layout_gravity="center">
+                            android:textStyle="bold">
 
                         </TextView>
 
@@ -259,31 +261,31 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginStart="5dp"
-                        android:padding="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:padding="5dp">
 
                         <TextView
+                            android:id="@+id/total_case"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
+                            android:layout_weight="1"
                             android:text="@string/number"
-                            android:textSize="12sp"
-                            android:id="@+id/total_case"
                             android:textColor="@color/black"
-                            android:layout_weight="1">
+                            android:textSize="12sp"
+                            android:textStyle="bold">
 
                         </TextView>
 
                         <TextView
+                            android:id="@+id/today_total"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:text="@string/increment_number"
-                            android:textSize="10sp"
                             android:layout_marginStart="5dp"
-                            android:id="@+id/today_total"
+                            android:layout_weight="1"
+                            android:text="@string/increment_number"
                             android:textColor="@color/blue"
-                            android:layout_weight="1">
+                            android:textSize="10sp"
+                            android:textStyle="bold">
 
                         </TextView>
 
@@ -292,12 +294,13 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="160dp"
                 android:layout_height="60dp"
-                app:strokeWidth="2dp"
                 android:backgroundTint="#EAE9E9"
-                app:strokeColor="@color/card_colour">
+                app:strokeColor="@color/card_colour"
+                app:strokeWidth="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -307,27 +310,27 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center">
+                        android:orientation="horizontal">
 
                         <View
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:layout_gravity="center"
-                            android:backgroundTint="@color/green"
-                            android:background="@drawable/viewbg_drawable">
+                            android:background="@drawable/viewbg_drawable"
+                            android:backgroundTint="@color/green">
 
                         </View>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
                             android:text="@string/active"
                             android:textSize="15sp"
-                            android:textStyle="bold"
-                            android:layout_marginStart="10dp"
-                            android:layout_gravity="center">
+                            android:textStyle="bold">
 
                         </TextView>
 
@@ -338,31 +341,31 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginStart="5dp"
-                        android:padding="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:padding="5dp">
 
                         <TextView
+                            android:id="@+id/active_cases"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
+                            android:layout_weight="1"
                             android:text="@string/number"
-                            android:textSize="12sp"
-                            android:id="@+id/active_cases"
                             android:textColor="@color/black"
-                            android:layout_weight="1">
+                            android:textSize="12sp"
+                            android:textStyle="bold">
 
                         </TextView>
 
                         <TextView
+                            android:id="@+id/today_active"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:text="@string/increment_number"
-                            android:textSize="10sp"
                             android:layout_marginStart="5dp"
-                            android:id="@+id/today_active"
+                            android:layout_weight="1"
+                            android:text="@string/increment_number"
                             android:textColor="@color/green"
-                            android:layout_weight="1">
+                            android:textSize="10sp"
+                            android:textStyle="bold">
 
                         </TextView>
 
@@ -371,12 +374,13 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="160dp"
                 android:layout_height="60dp"
-                app:strokeWidth="2dp"
                 android:backgroundTint="#EAE9E9"
-                app:strokeColor="@color/card_colour">
+                app:strokeColor="@color/card_colour"
+                app:strokeWidth="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -386,27 +390,27 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center">
+                        android:orientation="horizontal">
 
                         <View
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:layout_gravity="center"
-                            android:backgroundTint="@color/yellow"
-                            android:background="@drawable/viewbg_drawable">
+                            android:background="@drawable/viewbg_drawable"
+                            android:backgroundTint="@color/yellow">
 
                         </View>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
                             android:text="@string/recovered"
                             android:textSize="15sp"
-                            android:textStyle="bold"
-                            android:layout_marginStart="10dp"
-                            android:layout_gravity="center">
+                            android:textStyle="bold">
 
                         </TextView>
 
@@ -417,31 +421,31 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginStart="5dp"
-                        android:padding="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:padding="5dp">
 
                         <TextView
+                            android:id="@+id/total_recover"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
+                            android:layout_weight="1"
                             android:text="@string/number"
-                            android:textSize="12sp"
-                            android:id="@+id/total_recover"
                             android:textColor="@color/black"
-                            android:layout_weight="1">
+                            android:textSize="12sp"
+                            android:textStyle="bold">
 
                         </TextView>
 
                         <TextView
+                            android:id="@+id/today_recovered"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:text="@string/increment_number"
-                            android:textSize="10sp"
                             android:layout_marginStart="5dp"
-                            android:id="@+id/today_recovered"
+                            android:layout_weight="1"
+                            android:text="@string/increment_number"
                             android:textColor="@color/yellow"
-                            android:layout_weight="1">
+                            android:textSize="10sp"
+                            android:textStyle="bold">
 
                         </TextView>
 
@@ -450,12 +454,13 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="160dp"
                 android:layout_height="60dp"
-                app:strokeWidth="2dp"
                 android:backgroundTint="#EAE9E9"
-                app:strokeColor="@color/card_colour">
+                app:strokeColor="@color/card_colour"
+                app:strokeWidth="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -465,27 +470,27 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center">
+                        android:orientation="horizontal">
 
                         <View
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:layout_gravity="center"
-                            android:backgroundTint="@color/red"
-                            android:background="@drawable/viewbg_drawable">
+                            android:background="@drawable/viewbg_drawable"
+                            android:backgroundTint="@color/red">
 
                         </View>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
                             android:text="@string/deaths"
                             android:textSize="15sp"
-                            android:textStyle="bold"
-                            android:layout_marginStart="10dp"
-                            android:layout_gravity="center">
+                            android:textStyle="bold">
 
                         </TextView>
 
@@ -496,31 +501,31 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginStart="5dp"
-                        android:padding="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:padding="5dp">
 
                         <TextView
+                            android:id="@+id/total_deaths"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
+                            android:layout_weight="1"
                             android:text="@string/number"
-                            android:textSize="12sp"
-                            android:id="@+id/total_deaths"
                             android:textColor="@color/black"
-                            android:layout_weight="1">
+                            android:textSize="12sp"
+                            android:textStyle="bold">
 
                         </TextView>
 
                         <TextView
+                            android:id="@+id/today_deaths"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:text="@string/increment_number"
-                            android:textSize="10sp"
                             android:layout_marginStart="5dp"
-                            android:id="@+id/today_deaths"
+                            android:layout_weight="1"
+                            android:text="@string/increment_number"
                             android:textColor="@color/red"
-                            android:layout_weight="1">
+                            android:textSize="10sp"
+                            android:textStyle="bold">
 
                         </TextView>
 
@@ -533,5 +538,65 @@
         </GridLayout>
     </RelativeLayout>
 
+    <LinearLayout
+        android:id="@+id/country_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/middle_bg"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/relativebg_drawable">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/contries"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/cases"
+                android:id="@+id/filter_cases"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp">
+
+            </TextView>
+            <Spinner
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:id="@+id/spinner_filters"
+                android:background="@drawable/baseline_arrow_drop_down_24">
+
+            </Spinner>
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
 
 </RelativeLayout>

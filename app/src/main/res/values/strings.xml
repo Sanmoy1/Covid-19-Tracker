@@ -7,4 +7,6 @@
     <string name="deaths">Deaths</string>
     <string name="number">6969</string>
     <string name="increment_number">9999</string>
+    <string name="contries">Country</string>
+    <string name="cases">Cases</string>
 </resources>
